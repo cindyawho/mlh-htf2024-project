@@ -26,7 +26,7 @@ https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&
 
 ## Future Site Improvements
 - 11/09: Responsive navbar: https://www.freecodecamp.org/news/how-to-create-an-animated-hamburger-menu-in-react/
-- 
+- 11/09: Create hero component and json for repeating style hero section of pages
 
 #### Credits
 Credit to Adobe Stock: 
