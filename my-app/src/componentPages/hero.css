@@ -17,7 +17,7 @@ h1, h2, p{
 }
 
 .heroClass{
-    padding: calc(10px + 20/1440 * 100vw);
+    padding: calc(55px + 20/1440 * 100vw);
 }
 
 .tagline{

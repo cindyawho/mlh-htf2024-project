@@ -1,0 +1,29 @@
+[
+    {
+        "title":"Monday Motivation",
+        "host":"The Educator Lounge",
+        "date":"Monday, November 18",
+        "details":"Talk with other teachers to get ready for the week. Chance to win a prize!",
+        "registerLink":"/",
+        "moreInfoLink":"/",
+        "key":1
+    },
+    {
+        "title":"Gaming Session",
+        "host":"Mr. Ant Hernandez",
+        "date":"Friday, November 22",
+        "details":"Let's game!",
+        "registerLink":"/",
+        "moreInfoLink":"/",
+        "key":2
+    },
+    {
+        "title":"Friendsgiving",
+        "host":"The Educator Lounge",
+        "date":"Wednesday, November 27",
+        "details":"Be in community as we say thank goodness for our upcoming time off and show gratitude to our friends.",
+        "registerLink":"/",
+        "moreInfoLink":"/",
+        "key":3
+    }
+]
