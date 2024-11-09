@@ -9,7 +9,6 @@
   }
 
 .navBody{
-    margin: 0;
     padding: 10px 20px;
     font-size: var(--nav-font-size);
     background-color: var(--bg-color-beige);
@@ -30,8 +29,6 @@ img{
 }
 ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .signIn{
@@ -55,7 +52,12 @@ button:hover{
 }
 
 .signUp{
-    margin: 0;
     padding-top: 5px;
     font-size: calc(20/1440 * 100vw);
+}
+
+@media (max-width: 600px){
+    .navBody{
+        background-color: var(--bg-secondary-green);
+    }
 }
