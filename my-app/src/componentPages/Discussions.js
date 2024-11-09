@@ -1,9 +1,10 @@
 import '../App.css';
 import PageHero from '../components/PageHero';
 import './discussions.css'
-import React, { Component } from 'react';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel'; // yarn add react-responsive-carousel
+import Button from '../components/Button';
 
 function Discussions() {
   return (
@@ -37,6 +38,14 @@ function Discussions() {
           </div>
         </Carousel>
       </div>
+      <Button 
+        text="Start a Discussion"
+      />
+      <img 
+        src={require("../assets/temporary/DiscussionsOrganization.png")} 
+        alt="static visual of discussions"
+        class="tempDiscussions"
+      />
     </>
   );
 }
