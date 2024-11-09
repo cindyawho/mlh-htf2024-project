@@ -23,3 +23,12 @@ My prototype will be a Website using React.
 
 I created my design on Figma which can be seen here:
 https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&t=k2VRRqtWAcYZQx5n-1
+
+## Future Site Improvements
+- 11/09: Responsive navbar: https://www.freecodecamp.org/news/how-to-create-an-animated-hamburger-menu-in-react/
+- 
+
+#### Credits
+Credit to Adobe Stock: 
+- "shareIdeas.png": business illustration. small people characters develop creative business idea. Isometric big light bulb as metaphor idea. Graphics design Generative AI Stock Illustration | Adobe Stock
+- "laptop.png": Female Tutor Conducting Online Lesson at Home Using Laptop for Virtual Education Stock Illustration | Adobe Stock
