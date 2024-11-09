@@ -26,7 +26,15 @@ const Navbar = () => {
         </ul>
         <div class="signIn">
             <button>Sign In</button>
-            <p className='signUp'><a href="https://cindyawho.github.io/#contact">Or Sign Up</a></p>
+            <p className='signUp'>
+                <a 
+                    href="https://cindyawho.github.io/#contact"
+                    target='_blank'
+                    rel="noopener noreferrer"
+                >
+                    Or Sign Up
+                </a>
+            </p>
         </div>
     </div>
   </div>
