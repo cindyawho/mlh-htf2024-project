@@ -55,6 +55,7 @@
 .create button{
     background-color: var(--button-color-pink);
     color: var(--font-color-light);
+    width: fit-content;
 }
 .create button:hover{
     background-color: var(--font-color-light);
@@ -70,7 +71,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease-in-out;
 }
@@ -117,5 +117,5 @@
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
 }

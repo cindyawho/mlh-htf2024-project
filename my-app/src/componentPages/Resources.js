@@ -57,7 +57,19 @@ function ResourceItems({title, author, fileURL, imgURL, price, grades, subjects,
           <h3>{title}</h3>
           <h4>By: {author}</h4>
         </span>
-        <a href={fileURL} target='_blank' rel='noopener noreferrer'><p>Resource Available for $ {price}</p></a>
+        <a href={fileURL} target='_blank' rel='noopener noreferrer'><p>Resource Available for <strong>$ {price}</strong></p></a>
+        <p>
+          <strong>Best for grades</strong>: 
+          {grades.map((grade, index) => (
+            <span> {grade},</span>
+          ))}
+        </p>
+        <p>
+          <strong>Subjects</strong>: 
+          {subjects.map((subject, index) => (
+            <span> {subject},</span>
+          ))}
+        </p>
         
       </span>
     </div>
