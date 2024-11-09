@@ -22,8 +22,8 @@
 
 .homeGrid-item{
     background-color: var(--bg-secondary-green);
-    padding: 25px;
-    border-radius: 20px;
+    padding: 50px;
+    border-radius: 10px;
     width: 30vw;
     height: fit-content;
     font-size: calc(10px + 48/1440 * 100vh);
@@ -32,6 +32,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 5px 5px 10px var(--font-color-dark);
+    transition: .75s ease-in-out;
+}
+.homeGrid-item:hover{
+    background-color: #98ac95;
 }
 .homeGrid-item img{
     width: 75%;

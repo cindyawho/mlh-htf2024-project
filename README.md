@@ -37,6 +37,7 @@ https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&
 - add filter section to blogs
 - add testimonials or pictures from events on events page
 - fix resource grades/subjects mapping
+- navbar show only on scroll up react (web searchable)
 
 #### Credits
 Credit to Inspirations:
