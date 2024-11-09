@@ -1,0 +1,44 @@
+:root{
+    --bg-color-beige: #F5EDE0;
+    --bg-secondary-green: #D0E4CC;
+    --bg-accent-lines: #4A3B2D;
+    --font-color1-dark: #3E3E3E;
+    --font-color2-white: #FFF7F0;
+    --button-color-green: #A0B09D;
+    --nav-font-size: calc(40/1440 * 100vw);
+  }
+
+.navBody{
+    margin: 0;
+    padding: 15px;
+    font-size: var(--nav-font-size);
+    background-color: var(--bg-color-beige);
+}
+.header, .tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tabs{
+    gap: 20px
+}
+ul{
+    list-style: none;
+}
+
+.signIn{
+    justify-items: center;
+}
+
+button{
+    background-color: var(--button-color-green);
+    color: var(--font-color2-white);
+    font-size: var(--nav-font-size);
+    border: none;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+.signUp{
+    font-size: calc(20/1440 * 100vw);
+}

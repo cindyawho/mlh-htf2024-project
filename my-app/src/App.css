@@ -13,6 +13,10 @@
   --button-color-pink: #FF9F97;
 }
 
+*{
+  font-family: var(--font-family);
+}
+
 .App {
   text-align: left;
 }
