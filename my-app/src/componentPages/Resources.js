@@ -13,6 +13,16 @@ function Resources() {
         subtitle1={"All You Need to Teach,"}
         subtitle2={"All in One Place"}
       />
+      <div class="resourcesHeader">
+        <div class="filter">
+          <p>Filter: </p>
+          <button class="filterButton">Grade(s)</button>
+          <button class="filterButton">Subject(s)</button>
+        </div>
+        <div class="create">
+          <button>Upload a Resource</button>
+        </div>
+      </div>
       <div class="resourcesMain">
         {resourceList.map((resource, index) => (
           <ResourceItems 

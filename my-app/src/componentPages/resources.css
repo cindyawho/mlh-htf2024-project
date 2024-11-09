@@ -22,6 +22,47 @@
     background-color: var(--bg-color-beige);
 }
 
+/* RESOURCE FILTER AND UPLOAD SECTION */
+
+.resourcesHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 40px;
+}
+.resourcesHeader button{
+    border-radius: 25px;
+    padding: 10px 40px 15px 40px;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.filter p{
+    font-size: calc(14px + 20/1440 * 100vw);
+}
+.filter button{
+    background-color: var(--button-color-blue);
+    color: var(--font-color-dark);
+}
+.filter button:hover{
+    background-color: var(--button-color-green);
+    color: var(--font-color-light);
+}
+
+.create button{
+    background-color: var(--button-color-pink);
+    color: var(--font-color-light);
+}
+.create button:hover{
+    background-color: var(--font-color-light);
+    color: var(--font-color-dark);
+}
+
+/* RESOURCE ITEMS */
+
 .resourceItem {
     border: 1px solid var(--bg-accent-lines);
     border-radius: 15px;
