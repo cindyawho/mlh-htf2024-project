@@ -1,0 +1,14 @@
+footer {
+    border-top: 1px double var(--bg-accent-lines);
+    padding: 10px;
+    text-align: center;
+    font-size: calc(10px + 30/1440*100vw);
+    font-style: italic;
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (min-width: 600px){
+    footer{
+        font-size: 20px;
+    }
+}

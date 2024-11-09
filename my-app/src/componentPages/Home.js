@@ -4,6 +4,7 @@ import React from "react";
 
 function Home() {
   return (
+    <>
     <header className="App-header">
       <div class='title'>
         <div class='titleText'>
@@ -27,6 +28,10 @@ function Home() {
         <h2 class='tagline'>Tools, Ideas, and Community <br/> for Today's Teachers</h2>
       </div>
     </header>
+    <main>
+
+    </main>
+    </>
   );
 }
 
