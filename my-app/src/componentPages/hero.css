@@ -1,3 +1,25 @@
+/* Animation fade in */
+h1, h2, p{
+    animation: fadeInAnimation ease-in-out 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        padding-left: -200px;
+    }
+
+    100% {
+        opacity: 1;
+        padding-left: 10px;
+    }
+}
+
+.heroClass{
+    padding: calc(10px + 20/1440 * 100vw);
+}
+
 .tagline{
     text-align: right;
 }
@@ -6,6 +28,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.title{
+    text-align: right;
 }
 
 .title img{

@@ -1,13 +1,17 @@
 import '../App.css';
 import React from "react";
+import PageHero from '../components/PageHero';
 
 function Discussions() {
   return (
-    <header className="App-header">
-        <h1>Discussions Room</h1>
-        <p>Supporting Every Step<br/>
-        of your Teaching Journey</p>
-    </header>
+    <>
+      <PageHero 
+        title1={"Discussions"}
+        title2={"Room"}
+        subtitle1={"Supporting Every Step"}
+        subtitle2={"of your Teaching Journey"}
+      />
+    </>
   );
 }
 
