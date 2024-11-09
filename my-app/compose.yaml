@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  react-app:
+    build:
+      context: .  # Use the current directory (my-app) as the build context
+      dockerfile: Dockerfile  # The Dockerfile is in the current directory
+    ports:
+      - "80:80"
