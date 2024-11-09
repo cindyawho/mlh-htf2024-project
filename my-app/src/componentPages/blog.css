@@ -31,3 +31,49 @@
     background-color: var(--button-color-pink);
     color: var(--font-color-light);
 }
+
+.readGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 75px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.blogItem {
+    background-color: var(--bg-secondary-green);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: var(--font-family);
+    box-shadow: 5px 5px 10px var(--font-color-dark);
+    transition: .75s ease-in-out;
+}
+
+.blogItem:hover{
+    background-color: #98ac95;
+    color: var(--font-color-light);
+}
+
+.itemTitle {
+    margin-bottom: 30px;
+}
+.itemTitle h3{
+    font-size: calc(14px + 15/1440*100vw);
+    padding-bottom: 10px;
+}
+.itemTitle h4{
+    font-size: calc(12px + 10/1440*100vw);
+}
+.blogItem p{
+    font-size: calc(12px + 10/1440*100vw);
+    text-align: justify;
+}
+.blogItem p::first-letter {
+    font-size: 1.4em; 
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: none;;
+}

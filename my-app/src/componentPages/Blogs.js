@@ -46,7 +46,7 @@ function BlogItems({title, author, blogURL, summary}) {
       <a href={blogURL} target='_blank' rel='noopener noreferrer'>
         <div class="itemTitle">
           <h3>{title}</h3>
-          <h4>{author}</h4>
+          <h4>By: {author}</h4>
         </div>
         <p>{summary}</p>
       </a>      
