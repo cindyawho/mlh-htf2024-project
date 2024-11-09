@@ -1,0 +1,12 @@
+.calendar{
+    margin: 200px auto;
+    width: 80%;
+    text-align: center;
+}
+.calendar button{
+    background-color: var(--font-color2-white);
+    border-radius: 3px;
+    border: .25px solid var(--bg-accent-lines);
+    padding: 20px;
+    color: var(--font-color1-dark);
+}

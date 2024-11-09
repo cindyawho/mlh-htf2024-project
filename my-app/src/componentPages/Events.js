@@ -5,6 +5,7 @@ import PageHero from '../components/PageHero';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel'; // yarn add react-responsive-carousel
 import eventList from '../data/events.json'
+import Calendar from '../components/Calendar'
 
 function Events() {
   return (
@@ -40,6 +41,7 @@ function Events() {
           ))}
         </Carousel>
       </div>
+      <Calendar />
     </>
   );
 }

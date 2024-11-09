@@ -35,6 +35,7 @@ https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&
 - delete :root variables in other folders
 - use state to limit amount of characters on blog post summaries
 - add filter section to blogs
+- add testimonials or pictures from events on events page
 
 #### Credits
 Credit to Inspirations:
