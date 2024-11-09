@@ -1,13 +1,17 @@
 import '../App.css';
 import React from "react";
+import PageHero from '../components/PageHero';
 
 function Events() {
   return (
-    <header className="App-header">
-        <h1>Upcoming Events</h1>
-        <p>Building Connections Beyond<br/>
-        the Classroom</p>
-    </header>
+    <>
+      <PageHero 
+        title1={"Upcoming"}
+        title2={"Events"}
+        subtitle1={"Building Connections Beyond"}
+        subtitle2={"the Classroom"}
+      />
+    </>
   );
 }
 

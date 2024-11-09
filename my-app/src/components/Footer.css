@@ -6,6 +6,7 @@ footer {
     font-style: italic;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 @media screen and (min-width: 600px){
     footer{
