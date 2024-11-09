@@ -1,0 +1,16 @@
+.tagline{
+    text-align: right;
+}
+
+.title, .subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title img{
+    width: calc(486/1440 * 100vw);
+}
+.subtitle img{
+    width: calc(570/1440 * 100vw);
+}

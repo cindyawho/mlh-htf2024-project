@@ -19,6 +19,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a{
@@ -27,6 +28,15 @@ a{
 }
 a:hover{
   text-decoration: underline;
+}
+
+h1{
+  font-size: calc(128/1440 * 100vw);
+  font-weight: normal;
+}
+h2{
+  font-size: calc(64/1440 * 100vw);
+  font-weight: normal;
 }
 
 .App {
@@ -47,10 +57,10 @@ a:hover{
 .App-header {
   background-color: var(--bg-color-beige);
   min-height: 100vh;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: var(--font-color1-dark);
   font-family: var(--font-family);
