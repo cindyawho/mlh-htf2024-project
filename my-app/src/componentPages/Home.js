@@ -32,7 +32,7 @@ function Home() {
     <main class="homeGrid">
       <div class="homeGrid-item">
         <img 
-          src={require("../assets/homeDiscuss.png")}
+          src={require("../assets/homeIcons/homeDiscuss.png")}
           alt="2 quote bubbles"
           width="40vw"
           height="auto"
