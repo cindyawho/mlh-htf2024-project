@@ -10,7 +10,14 @@ const Navbar = () => {
   <div class="navBody">
     <div class="header">
         <ul class="tabs">
-            <li>Logo</li>
+            <li>
+                <img 
+                    src={require("../assets/logo.png")}
+                    alt="educator lounge logo"
+                    width="40vw"
+                    height="auto"
+                />
+            </li>
             <li>Discussions</li>
             <li>Resources</li>
             <li>Blogs</li>
@@ -19,7 +26,7 @@ const Navbar = () => {
         </ul>
         <div class="signIn">
             <button>Sign In</button>
-            <p className='signUp'>Or Sign Up</p>
+            <p className='signUp'><a href="https://cindyawho.github.io/#contact">Or Sign Up</a></p>
         </div>
     </div>
   </div>

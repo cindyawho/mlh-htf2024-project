@@ -37,8 +37,17 @@ button{
     border: none;
     border-radius: 30px;
     padding: 5px 20px;
+    transition: .3s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    color: var(--font-color1-dark);
+    background-color: var(--font-color2-white);
+    border: 1px var(--bg-accent-lines) solid;
 }
 
 .signUp{
+    margin: 0;
+    padding-top: 5px;
     font-size: calc(20/1440 * 100vw);
 }
