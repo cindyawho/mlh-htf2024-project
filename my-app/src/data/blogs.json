@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Teaching my Students to Love Bugs",
+        "author": "Ms. Maya Higa",
+        "summary": "Alveus is a nonprofit organization founded by Maya Higa that functions as a wildlife sanctuary and as a virtual education center facility to provide permanent homes to non-releasable animal ambassadors.",
+        "blogURL":"https://www.alveussanctuary.org/"
+    },
+    {
+        "title": "The Challenges of a Repetitive Historical Cycle",
+        "author": "Mr. Hasan Piker",
+        "summary": "Hasan streams on Twitch, where he discusses politics, news, social issues, and current events, often from a socialist perspective.",
+        "blogURL":"https://en.wikipedia.org/wiki/Socialism"
+    },
+    {
+        "title": "Day 50 on Our 1st Grade Coding Journey",
+        "author": "Ms. Coder Coder",
+        "summary": "I personally think it's good idea for front-end web developers to know at least a bit of back-end, and vice versa. At the very least, learning the basics of both will help you figure out if you like front-end or back-end web development better.", 
+        "blogURL":"https://coder-coder.com/being-good-programmer-isnt-writing-code/"
+    },
+    {
+        "title": "Fighting for Fair Pay",
+        "author": "Mr. Eduardo Vargas",
+        "summary": "Los Angeles public school workers continue to fight for fair wages in historic 3-day solidarity strike",
+        "blogURL":"https://www.liberationnews.org/los-angeles-public-school-workers-continue-to-fight-for-fair-wages-in-historic-3-day-solidarity-strike/"
+    }
+]
