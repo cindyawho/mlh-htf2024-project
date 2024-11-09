@@ -1,5 +1,20 @@
+/* Global Themes */
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+
+:root{
+  --bg-color-beige: #F5EDE0;
+  --bg-secondary-green: #D0E4CC;
+  --bg-accent-lines: #4A3B2D;
+  --font-color1-dark: #3E3E3E;
+  --font-color2-white: #FFF7F0;
+  --font-family: "Hina Mincho", serif;
+  --button-color-green: #A0B09D;
+  --button-color-blue: #C7E6F1;
+  --button-color-pink: #FF9F97;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -14,18 +29,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--bg-color-beige);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--font-color1-dark);
+  font-family: var(--font-family);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--button-color-pink);
 }
 
 @keyframes App-logo-spin {

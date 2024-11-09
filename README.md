@@ -19,6 +19,7 @@ With that in mind, I might have liked a single site where teachers can discuss t
 I want to create a prototype for a site that consolidates these different pieces into a single place. 
 
 ## Prototype
-Website? Mobile App?
+My prototype will be a Website using React.
 
-TechStack:
+I created my design on Figma which can be seen here:
+https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&t=k2VRRqtWAcYZQx5n-1
