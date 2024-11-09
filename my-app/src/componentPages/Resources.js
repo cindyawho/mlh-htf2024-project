@@ -2,6 +2,7 @@ import '../App.css';
 import React from "react";
 import PageHero from '../components/PageHero';
 import resourceList from '../data/resources.json'
+import './resources.css'
 
 function Resources() {
   return (
@@ -17,7 +18,15 @@ function Resources() {
           <ResourceItems 
             key={index} 
             title={resource.title} 
+            author={resource.author}
             fileURL={resource.fileURL} 
+            imgURL={resource.imgURL} 
+            price={resource.price} 
+            grades={resource.grades} 
+            subjects={resource.subjects} 
+            type={resource.type} 
+            format={resource.format} 
+            size={resource.size} 
           />
         ))}
     </div>
@@ -25,11 +34,22 @@ function Resources() {
   );
 }
 
-function ResourceItems({title, fileURL, imgURL, price, grades, subjects, type, format, size}) {
+function ResourceItems({title, author, fileURL, imgURL, price, grades, subjects, type, format, size}) {
   return (
-    <div>
-      <h2>{title}</h2>
-      <p>{fileURL}</p>
+    <div class="resourceItem">
+      <img
+        src={imgURL}
+        alt="screenshot of resource"
+        class="resourceImg"
+      />
+      <span class="resourceText">
+        <span class="resourceTextHeader">
+          <h3>{title}</h3>
+          <h4>By: {author}</h4>
+        </span>
+        <a href={fileURL} target='_blank' rel='noopener noreferrer'><p>Resource Available for $ {price}</p></a>
+        
+      </span>
     </div>
   );
 }

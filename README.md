@@ -29,6 +29,7 @@ https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&
 - 11/09: Create hero component and json for repeating style hero section of pages
 - 11/09: fixed navbar
 - 11/09: remove any use of temporary assets and code the components
+- 11/09: make it more mobile friendly
 
 #### Credits
 Credit to Inspirations:

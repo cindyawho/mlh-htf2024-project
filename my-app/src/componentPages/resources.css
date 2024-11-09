@@ -1,0 +1,80 @@
+:root {
+    --bg-color-beige: #F5EDE0;
+    --bg-secondary-green: #D0E4CC;
+    --bg-accent-lines: #4A3B2D;
+    --font-color-dark: #3E3E3E;
+    --font-color-light: #FFF7F0;
+    --font-family: "Hina Mincho", serif;
+    --button-color-green: #A0B09D;
+    --button-color-blue: #C7E6F1;
+    --button-color-pink: #FF9F97;
+}
+
+.resourcesMain {
+    border: 1px solid var(--bg-accent-lines);
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--bg-color-beige);
+}
+
+.resourceItem {
+    border: 1px solid var(--bg-accent-lines);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.resourceItem:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.resourceItem img {
+    width: 25%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resourceTextHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resourceText h3 {
+    font-size: calc(18px + 15/1440*100vw);
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.resourceText h4 {
+    font-size: calc(16px + 10/1440*100vw);
+    font-weight: normal;
+    padding: 0 10px;
+    text-align: right;
+    color: var(--font-color-dark);
+}
+
+.resourceText p {
+    font-size: calc(12px + 12/1440*100vw);
+    padding: 0 10px;
+    color: var(--font-color-dark);
+}
+
+.resourceText {
+    flex: 1;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
