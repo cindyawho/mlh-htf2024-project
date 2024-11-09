@@ -1,0 +1,33 @@
+:root{
+    --bg-color-beige: #F5EDE0;
+    --bg-secondary-green: #D0E4CC;
+    --bg-accent-lines: #4A3B2D;
+    --font-color1-dark: #3E3E3E;
+    --font-color2-white: #FFF7F0;
+    --font-family: "Hina Mincho", serif;
+    --button-color-green: #A0B09D;
+    --button-color-blue: #C7E6F1;
+    --button-color-pink: #FF9F97;
+}
+
+.homeGrid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeGrid-item{
+    background-color: var(--bg-secondary-green);
+    padding: 15px;
+    border-radius: 20px;
+    width: 30vw;
+    height: max-content;
+    font-size: calc(10px + 48/1440 * 100vh);
+    text-align: center;
+    align-items: center;
+}
+.homeGrid-item img{
+    display: block;
+    margin: 0 auto;
+    width: 20vw;
+    height: 100%;
+}

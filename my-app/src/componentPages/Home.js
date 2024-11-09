@@ -1,5 +1,6 @@
 import '../App.css';
 import "./hero.css"
+import "./Home.css"
 import React from "react";
 
 function Home() {
@@ -28,8 +29,16 @@ function Home() {
         <h2 class='tagline'>Tools, Ideas, and Community <br/> for Today's Teachers</h2>
       </div>
     </header>
-    <main>
-
+    <main class="homeGrid">
+      <div class="homeGrid-item">
+        <img 
+          src={require("../assets/homeDiscuss.png")}
+          alt="2 quote bubbles"
+          width="40vw"
+          height="auto"
+        />
+        <p>Discussions</p>
+      </div>
     </main>
     </>
   );
