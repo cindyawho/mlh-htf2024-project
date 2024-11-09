@@ -31,6 +31,9 @@ https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&
 - 11/09: remove any use of temporary assets and code the components
 
 #### Credits
+Credit to Inspirations:
+- TeachersPayTeachers for organization and data inspiration of the Resources Library
+- Reddit r/teachers for the categories and highlight inspiration of the Discussions Room
 Credit to Adobe Stock: 
 - "shareIdeas.png": business illustration. small people characters develop creative business idea. Isometric big light bulb as metaphor idea. Graphics design Generative AI Stock Illustration | Adobe Stock
 - "laptop.png": Female Tutor Conducting Online Lesson at Home Using Laptop for Virtual Education Stock Illustration | Adobe Stock

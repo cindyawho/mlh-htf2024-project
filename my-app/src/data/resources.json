@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Graphing Linear Equations Word Problems",
+        "fileURL" : "https://www.teacherspayteachers.com/Product/Graphing-Linear-Equations-Word-Problems-2485594",
+        "imgURL": "https://ecdn.teacherspayteachers.com/cdn-cgi/image/format=avif,quality=70,width=525,height=525,onerror=redirect/thumbitem/Graphing-Linear-Equations-Word-Problems-2485594-1717527904/750f-2485594-1.jpg",
+        "price": 0,
+        "grades": [7, 8, 9, 10],
+        "subjects": ["Algebra", "Algebra 2", "Word Problems"],
+        "type": ["Handouts", "Printables", "Worksheets"],
+        "format": ".pdf",
+        "size": "4 pages"
+    },
+    {
+        "title": "Ruby Bridges Writing Craft Craftivity Black History Month Women's History",
+        "fileURL" : "https://www.teacherspayteachers.com/Product/Ruby-Bridges-Writing-Craft-Craftivity-Black-History-Month-Womens-History-7702792",
+        "imgURL": "https://ecdn.teacherspayteachers.com/cdn-cgi/image/format=avif,quality=70,width=525,height=525,onerror=redirect/thumbitem/Ruby-Bridges-Writing-Craft-Craftivity-Black-History-Month-Women-s-History-7702792-1678868210/750f-7702792-1.jpg",
+        "price": 4,
+        "grades": ["Pre-K", "Kinder", 1, 2],
+        "subjects": ["Social Studies", "Writing", "Black History Month"],
+        "type": ["Printables", "Centers", "Bulletin Board"],
+        "format": ".pdf",
+        "size": "12 pages"
+    },
+    {
+        "title": "Middle School Computer Science Unit 1: Intro to Coding",
+        "fileURL" : "https://www.teacherspayteachers.com/Product/Middle-School-Computer-Science-Unit-1-Intro-to-Coding-4634387",
+        "imgURL": "https://ecdn.teacherspayteachers.com/cdn-cgi/image/format=avif,quality=70,width=525,height=525,onerror=redirect/thumbitem/Middle-School-Computer-Science-Unit-1-Intro-to-Coding-4634387-1657542824/750f-4634387-1.jpg",
+        "price": 0,
+        "grades": [5, 6, 7],
+        "subjects": ["Computer Science"],
+        "type": ["Lessons", "Unit Plans"],
+        "format": "google drive",
+        "size": "6 pages"
+    }
+]
