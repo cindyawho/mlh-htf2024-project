@@ -22,10 +22,10 @@
 
 .homeGrid-item{
     background-color: var(--bg-secondary-green);
-    padding: 15px;
+    padding: 25px;
     border-radius: 20px;
     width: 30vw;
-    height: fit-content; /* Need to change maxheight with media query*/
+    height: fit-content;
     font-size: calc(10px + 48/1440 * 100vh);
     text-align: center;
     display: flex;
@@ -34,9 +34,9 @@
     align-items: center;
 }
 .homeGrid-item img{
-    width: 80%;
-    height: auto;
-    object-fit: contain;
+    width: 75%;
+    height: 30vh;
+    object-fit: cover;
 }
 .homeGrid-item p{
     margin-top: auto;
