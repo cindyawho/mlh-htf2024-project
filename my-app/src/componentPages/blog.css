@@ -1,0 +1,33 @@
+.blogDiv{
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.blogDiv h2{
+    padding-bottom: 50px;
+}
+
+.create{
+    padding: 50px 0;
+}
+
+.createButtons{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+
+.create button{
+    width: 30%;
+    background-color: var(--button-color-blue);
+    color: var(--font-color-dark);
+    border-radius: 25px;
+    padding: 10px 40px 15px 40px;
+}
+.create button:hover{
+    background-color: var(--button-color-pink);
+    color: var(--font-color-light);
+}

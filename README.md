@@ -32,6 +32,7 @@ https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&
 - 11/09: make it more mobile friendly
 - 11/09: scroll hides text, consider https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll_snap/Basic_concepts or https://codepen.io/kriswpmu/pen/RwwXGYZ
 - add functionality to filters and uploads
+- delete :root variables in other folders
 
 #### Credits
 Credit to Inspirations:
