@@ -2,6 +2,7 @@ import '../App.css';
 import "./hero.css"
 import "./Home.css"
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -30,34 +31,42 @@ function Home() {
       </div>
     </header>
     <main class="homeGrid">
-      <div class="homeGrid-item">
-        <img 
-          src={require("../assets/homeIcons/homeDiscuss.png")}
-          alt="2 quote bubbles"
-        />
-        <p>Discussions</p>
-      </div>
-      <div class="homeGrid-item">
-        <img 
-          src={require("../assets/homeIcons/homeResources.png")}
-          alt="a stacks of documents"
-        />
-        <p>Resources</p>
-      </div>
-      <div class="homeGrid-item">
-        <img 
-          src={require("../assets/homeIcons/homeEvents.png")}
-          alt="an icon of three figures cheering"
-        />
-        <p>Events</p>
-      </div>
-      <div class="homeGrid-item">
-        <img 
-          src={require("../assets/homeIcons/homeBlogs.png")}
-          alt="an icon of a website"
-        />
-        <p>Blogs</p>
-      </div>
+      <Link to="/discussions">
+        <div class="homeGrid-item">
+          <img 
+            src={require("../assets/homeIcons/homeDiscuss.png")}
+            alt="2 quote bubbles"
+          />
+          <p>Discussions</p>
+        </div>
+      </Link>
+      <Link to="/resources">
+        <div class="homeGrid-item">
+          <img 
+            src={require("../assets/homeIcons/homeResources.png")}
+            alt="a stacks of documents"
+          />
+          <p>Resources</p>
+        </div>
+      </Link>
+      <Link to="/events">
+        <div class="homeGrid-item">
+          <img 
+            src={require("../assets/homeIcons/homeEvents.png")}
+            alt="an icon of three figures cheering"
+          />
+          <p>Events</p>
+        </div>
+      </Link>
+      <Link to="/blogs">
+        <div class="homeGrid-item">
+          <img 
+            src={require("../assets/homeIcons/homeBlogs.png")}
+            alt="an icon of a website"
+          />
+          <p>Blogs</p>
+        </div>
+      </Link>
     </main>
     </>
   );
