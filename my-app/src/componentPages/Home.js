@@ -34,10 +34,29 @@ function Home() {
         <img 
           src={require("../assets/homeIcons/homeDiscuss.png")}
           alt="2 quote bubbles"
-          width="40vw"
-          height="auto"
         />
         <p>Discussions</p>
+      </div>
+      <div class="homeGrid-item">
+        <img 
+          src={require("../assets/homeIcons/homeResources.png")}
+          alt="a stacks of documents"
+        />
+        <p>Resources</p>
+      </div>
+      <div class="homeGrid-item">
+        <img 
+          src={require("../assets/homeIcons/homeEvents.png")}
+          alt="an icon of three figures cheering"
+        />
+        <p>Events</p>
+      </div>
+      <div class="homeGrid-item">
+        <img 
+          src={require("../assets/homeIcons/homeBlogs.png")}
+          alt="an icon of a website"
+        />
+        <p>Blogs</p>
       </div>
     </main>
     </>
