@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import '../App.css';
 import './Navbar.css';
 
@@ -11,18 +12,30 @@ const Navbar = () => {
     <div class="header">
         <ul class="tabs">
             <li>
-                <img 
-                    src={require("../assets/logo.png")}
-                    alt="educator lounge logo"
-                    width="40vw"
-                    height="auto"
-                />
+                <Link to="/">
+                    <img 
+                        src={require("../assets/logo.png")}
+                        alt="educator lounge logo"
+                        width="40vw"
+                        height="auto"
+                    />
+                </Link>
             </li>
-            <li>Discussions</li>
-            <li>Resources</li>
-            <li>Blogs</li>
-            <li>Events</li>
-            <li>About</li>
+            <li>
+                <Link to="/discussions">Discussions</Link>
+            </li>
+            <li>
+                <Link to="/resources">Resources</Link>
+            </li>
+            <li>
+                <Link to="/blogs">Blogs</Link>
+            </li>
+            <li>
+                <Link to="/events">Events</Link>
+            </li>
+            <li>
+                <Link to="/about">About</Link>
+            </li>
         </ul>
         <div class="signIn">
             <button>Sign In</button>
