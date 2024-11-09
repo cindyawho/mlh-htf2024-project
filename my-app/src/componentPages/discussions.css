@@ -1,0 +1,35 @@
+:root{
+    --bg-color-beige: #F5EDE0;
+    --bg-secondary-green: #D0E4CC;
+    --bg-accent-lines: #4A3B2D;
+    --font-color1-dark: #3E3E3E;
+    --font-color2-white: #FFF7F0;
+    --font-family: "Hina Mincho", serif;
+    --button-color-green: #A0B09D;
+    --button-color-blue: #C7E6F1;
+    --button-color-pink: #FF9F97;
+}
+.communityHighlights{
+    margin: 0 auto;
+    padding: 10px 30px 20px 30px;
+    width: 80%;
+    max-width: 900px;
+    border: 1px solid var(--bg-accent-lines);
+    border-radius: 30px;
+    overflow: visible;
+}
+.communityHighlights h1{
+    font-size: calc(70/1440 * 100vw);
+}
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; 
+    color: var(--font-color1-dark);
+}
+.carousel-item p {
+    font-size: calc(16px + 10/1440 * 100vw);
+    text-align: center;
+    margin: 0;
+}
