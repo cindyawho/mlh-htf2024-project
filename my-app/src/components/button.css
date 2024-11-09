@@ -1,0 +1,14 @@
+.buttonContainer{
+    width: 100%;
+    justify-content: center;
+    padding: 100px 50px;
+}
+.buttonContainer button{
+    background-color: #FF9F97;
+    color: #FFF7F0;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 45px;
+    font-size: calc(14px + 30/1440*100vw);
+    border-radius: 25px;
+}
