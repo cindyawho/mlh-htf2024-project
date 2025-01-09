@@ -11,6 +11,7 @@
   --button-color-green: #A0B09D;
   --button-color-blue: #C7E6F1;
   --button-color-pink: #FF9F97;
+  --nav-font-size: calc(40/1440 * 100vw);
 }
 
 *{

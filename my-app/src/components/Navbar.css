@@ -1,13 +1,3 @@
-:root{
-    --bg-color-beige: #F5EDE0;
-    --bg-secondary-green: #D0E4CC;
-    --bg-accent-lines: #4A3B2D;
-    --font-color1-dark: #3E3E3E;
-    --font-color2-white: #FFF7F0;
-    --button-color-green: #A0B09D;
-    --nav-font-size: calc(40/1440 * 100vw);
-  }
-
 .navBody{
     padding: 10px 20px;
     font-size: var(--nav-font-size);
