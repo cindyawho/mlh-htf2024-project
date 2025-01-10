@@ -1,13 +1,36 @@
 import '../App.css';
 import PageHero from '../components/PageHero';
 import './discussions.css'
-import React from 'react';
+import React, { useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel'; // yarn add react-responsive-carousel
 import Button from '../components/Button';
 import discussionList from '../data/discussions.json'
 
 function Discussions() {
+  const [data, setData] = useState(discussionList);
+  const [selectedFilterValue, setSelectedValue] = useState('newest'); // Default by Newest
+
+  const handleFilterChange = (event) => {
+    setSelectedValue(event.target.value);
+    handleSort(event.target.value);
+  };
+
+  const handleSort = (key) => {
+    const sortedData = [...data].sort((a, b) => {
+      if (key === 'newest') {
+        return new Date(b.date) - new Date(a.date);
+      } else if (key === 'oldest') {
+        return new Date(a.date) - new Date(b.date);
+      } else if (key === 'popular') {
+        return b.replies - a.replies;
+      }
+      return 0;
+    });
+
+    setData(sortedData);
+  }
+
   return (
     <>
       <PageHero 
@@ -46,7 +69,7 @@ function Discussions() {
       <div class="discussionContainer">
         <div class="filterBar">
           <p>Sort By: </p>
-          <select name="filter" id="filter">
+          <select name="filter" id="filter" value={selectedFilterValue} onChange={handleFilterChange}>
             <option value="newest">Newest</option>
             <option value="oldest">Oldest</option>
             <option value="popular">Popular</option>
@@ -61,7 +84,7 @@ function Discussions() {
         </div>
         <hr/>
         <div class="discussions">
-          {discussionList.map((item, index) => (
+          {data.map((item, index) => (
             <DiscussionItems
               title={item.title} 
               author={item.poster}
