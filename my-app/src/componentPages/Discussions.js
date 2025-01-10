@@ -9,9 +9,9 @@ import discussionList from '../data/discussions.json'
 
 function Discussions() {
   const [data, setData] = useState(discussionList);
-  const [selectedFilterValue, setSelectedValue] = useState('newest'); // Default by Newest
+  const [selectedSortValue, setSelectedValue] = useState('newest'); // Default by Newest
 
-  const handleFilterChange = (event) => {
+  const handleSortChange = (event) => {
     setSelectedValue(event.target.value);
     handleSort(event.target.value);
   };
@@ -69,7 +69,7 @@ function Discussions() {
       <div class="discussionContainer">
         <div class="filterBar">
           <p>Sort By: </p>
-          <select name="filter" id="filter" value={selectedFilterValue} onChange={handleFilterChange}>
+          <select name="filter" id="filter" value={selectedSortValue} onChange={handleSortChange}>
             <option value="newest">Newest</option>
             <option value="oldest">Oldest</option>
             <option value="popular">Popular</option>
