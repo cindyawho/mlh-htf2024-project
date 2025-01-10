@@ -77,3 +77,14 @@
 a:hover{
     text-decoration: none;;
 }
+
+@media screen and (max-width: 800px){
+    .readGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 75px;
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
