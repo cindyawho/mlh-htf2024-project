@@ -1,10 +1,21 @@
 import '../App.css';
 import './blog.css';
-import React from "react";
+import React, { useState } from 'react';
 import PageHero from '../components/PageHero'
 import blogList from '../data/blogs.json'
 
 function Blogs() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleType = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    console.log(searchQuery);
+  };
+
   return (
     <>
       <PageHero 
@@ -23,6 +34,12 @@ function Blogs() {
         </div>
         <div class="read">
           <h2>Read</h2>
+          
+          <form>
+            <input type="text" placeholder="Search Blogs" onChange={handleType}/>
+            <button onClick={handleSearch}>Search</button>
+          </form>
+
           <div class="readGrid">
             {blogList.map((blog, index) => (
               <BlogItems
