@@ -14,9 +14,13 @@ function Blogs() {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    const results = blogList.filter((item) =>
-      item.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const results = blogList.filter((item) => {
+      const titleMatch = item.title.toLowerCase().includes(searchQuery.toLowerCase());
+      const authorMatch = item.author.toLowerCase().includes(searchQuery.toLowerCase());
+      const summaryMatch = item.summary.toLowerCase().includes(searchQuery.toLowerCase());
+
+      return titleMatch || authorMatch || summaryMatch;
+    });
     setFilteredItems(results);
     console.log(searchQuery);
   };
@@ -44,6 +48,7 @@ function Blogs() {
             <input type="text" placeholder="Search Blogs" onChange={handleType}/>
             <button>Search</button>
           </form>
+          <p>*Searches through our blog titles, authors, and summaries.*</p>
 
           <div class="readGrid">
             {filteredItems.map((blog, index) => (
