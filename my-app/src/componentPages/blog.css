@@ -77,11 +77,6 @@
 a:hover{
     text-decoration: none;;
 }
-input{
-    font-size: var(--nav-font-size);
-    padding: 5px 10px;
-    margin-right: 10px;
-}
 
 @media screen and (max-width: 800px){
     .readGrid{

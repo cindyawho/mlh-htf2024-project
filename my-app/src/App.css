@@ -41,6 +41,20 @@ h2{
   font-size: calc(64/1440 * 100vw);
   font-weight: normal;
 }
+input, select{
+  font-size: var(--nav-font-size);
+  padding: 5px 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+select{
+  border-radius: 10px;
+  background-color: var(--button-color-blue);
+  transition: .5s ease-in-out;
+}
+select:hover{
+  background-color: var(--bg-color-beige);
+}
 
 .App {
   text-align: left;
