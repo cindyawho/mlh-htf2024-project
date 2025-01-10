@@ -26,14 +26,12 @@ https://www.figma.com/design/4Iiy3P0uXAfvMK589htQJ6/Educator-Lounge?node-id=1-2&
 
 ## Future Site Improvements
 - 11/09: Responsive navbar: https://www.freecodecamp.org/news/how-to-create-an-animated-hamburger-menu-in-react/
-- 11/09: Create hero component and json for repeating style hero section of pages
 - 11/09: fixed navbar
 - 11/09: remove any use of temporary assets and code the components
 - 11/09: make it more mobile friendly
 - 11/09: scroll hides text, consider https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll_snap/Basic_concepts or https://codepen.io/kriswpmu/pen/RwwXGYZ
 - add functionality to filters and uploads
 - use state to limit amount of characters on blog post summaries
-- add filter section to blogs
 - add testimonials or pictures from events on events page
 - fix resource grades/subjects mapping
 - navbar show only on scroll up react (web searchable)
