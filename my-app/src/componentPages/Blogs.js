@@ -6,6 +6,7 @@ import blogList from '../data/blogs.json'
 
 function Blogs() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [filteredItems, setFilteredItems] = useState(blogList);
 
   const handleType = (event) => {
     setSearchQuery(event.target.value);
@@ -13,6 +14,10 @@ function Blogs() {
 
   const handleSearch = (event) => {
     event.preventDefault();
+    const results = blogList.filter((item) =>
+      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setFilteredItems(results);
     console.log(searchQuery);
   };
 
@@ -35,18 +40,19 @@ function Blogs() {
         <div class="read">
           <h2>Read</h2>
           
-          <form>
+          <form onSubmit={handleSearch}>
             <input type="text" placeholder="Search Blogs" onChange={handleType}/>
-            <button onClick={handleSearch}>Search</button>
+            <button>Search</button>
           </form>
 
           <div class="readGrid">
-            {blogList.map((blog, index) => (
+            {filteredItems.map((blog, index) => (
               <BlogItems
                 title={blog.title} 
                 author={blog.author}
                 blogURL={blog.blogURL} 
                 summary={blog.summary}
+                filteredItems={filteredItems}
               />
             ))}
           </div>
@@ -56,7 +62,7 @@ function Blogs() {
   );
 }
 
-function BlogItems({title, author, blogURL, summary}) {
+function BlogItems({title, author, blogURL, summary, filteredItems}) {
   return (
     <>
     <div class="blogItem">
