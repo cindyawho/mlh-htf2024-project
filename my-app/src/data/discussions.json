@@ -1,26 +1,37 @@
 [
     {
+        "id":"00000005",
         "title": "Any teachers switching over to Standards-Based Grading?",
-        "author": "Ms. K",
-        "date": "2024-12-01",
+        "poster": "Ms. K",
+        "created_at": "2024-04-25 11:23:42.534",
         "replies": 8
     },
     {
+        "id": "00000004",
         "title": "I am struggling to help a student and I have tried everything. What classroom management secret haven't I tried??",
         "poster": "Struggling Teacher",
-        "date": "2023-11-15",
+        "created_at": "2024-01-30 14:16:21.632",
         "replies": 11
     },
     {
+        "id": "00000003",
         "title": "How do I take care of myself when there's so much going on all the time?",
         "poster": "Mr. Loki",
-        "date": "2023-10-31",
+        "created_at": "2023-12-15 15:22:14.245",
         "replies": 5
     },
     {
+        "id": "00000002",
         "title": "What is your highlight of the week? Mine is the gift of silence during reading time.",
         "poster": "Ms. Trelly",
-        "date": "2023-09-15",
+        "created_at": "2023-11-17 11:25:12.345",
         "replies": 7
+    },
+    {
+        "id": "00000001",
+        "title": "Welcome Educators! Hope the lounge is treating you all well! What are you looking forward to on this space? Is there anything you want to see happen here? Thanks!",
+        "poster": "Ms. Andrade",
+        "created_at": "2023-10-25 08:00:30.123",
+        "replies": 20
     }
 ]

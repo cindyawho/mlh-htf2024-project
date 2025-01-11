@@ -19,9 +19,9 @@ function Discussions() {
   const handleSort = (key) => {
     const sortedData = [...data].sort((a, b) => {
       if (key === 'newest') {
-        return new Date(b.date) - new Date(a.date);
+        return b.created_at - a.created_at;
       } else if (key === 'oldest') {
-        return new Date(a.date) - new Date(b.date);
+        return a.created_at - b.created_at;
       } else if (key === 'popular') {
         return b.replies - a.replies;
       }
@@ -92,7 +92,7 @@ function Discussions() {
             <DiscussionItems
               title={item.title} 
               author={item.poster}
-              date={item.date} 
+              created_at={item.created_at} 
               replies={item.replies}
             />
           ))}
@@ -102,13 +102,13 @@ function Discussions() {
   );
 }
 
-function DiscussionItems({title, author, date, replies}) {
+function DiscussionItems({title, author, created_at, replies}) {
   return (
     <>
     <div class="discussion">
       <div class="discussionHeader">
         <p>Posted by: {author}</p>
-        <p>{date}</p>
+        <p>{created_at}</p>
       </div>
       <h2>{title}</h2>
       <p class="discussionReplies">Replies: {replies}</p>
