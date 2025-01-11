@@ -68,19 +68,23 @@ function Discussions() {
 
       <div class="discussionContainer">
         <div class="filterBar">
-          <p>Sort By: </p>
-          <select name="filter" id="filter" value={selectedSortValue} onChange={handleSortChange}>
-            <option value="newest">Newest</option>
-            <option value="oldest">Oldest</option>
-            <option value="popular">Popular</option>
-          </select>
-          <p>Filter By: </p>
-          <select name="subject" id="subject">
-            <option value="math">Subjects</option>
-          </select>
-          <select name="grades" id="grades">
-            <option value="kinder">Grades</option>
-          </select>
+          <div class="sortBarSection">
+            <p>Sort By: </p>
+            <select name="filter" id="filter" value={selectedSortValue} onChange={handleSortChange}>
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
+              <option value="popular">Popular</option>
+            </select>
+          </div>
+          <div class="filterBarSection">
+            <p>Filter By: </p>
+            <select name="subject" id="subject">
+              <option value="math">Subjects</option>
+            </select>
+            <select name="grades" id="grades">
+              <option value="kinder">Grades</option>
+            </select>
+          </div>
         </div>
         <hr/>
         <div class="discussions">
