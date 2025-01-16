@@ -38,7 +38,9 @@ const Navbar = () => {
             </li>
         </ul>
         <div class="signIn">
-            <button>Sign In</button>
+            <Link to="/signin">
+                <button>Sign In</button>
+            </Link>
             <p className='signUp'>
                 <a 
                     href="https://cindyawho.github.io/#contact"
