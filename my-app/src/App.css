@@ -114,3 +114,40 @@ select:hover{
     transform: rotate(360deg);
   }
 }
+
+
+/*  SIGN IN SECTION */
+.login{
+  background-color: var(--font-color2-white);
+  width: 50vw;
+  height: fit-content;
+  margin: 30px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+/* .login > div{
+  border-top: 1px var(--bg-accent-lines) solid;
+  padding: 25px 0;
+} */
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  border-top: 1px var(--bg-accent-lines) solid;
+  padding-top: 25px;
+}
+.loginForm hr{
+  background-color: #3E3E3E;
+}
+.loginForm div label{
+  text-align: right;
+  width: 125px;
+}
+.loginForm button{
+  margin: 20px auto;
+  font-size: calc(14px + 10/1440*100vw);
+  width: 50%;
+}
