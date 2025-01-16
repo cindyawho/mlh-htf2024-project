@@ -39,13 +39,13 @@ function BlogsCreate() {
         const blogURL = event.target.elements.blogURL.value;
         const summary = event.target.elements.summary.value;
         const newBlog = { id, created_at, title, author, blogURL, summary };
-        console.log(newBlog);
+        // console.log(newBlog);
         event.target.reset();
 
         async function insertBlog() {
             try {
                 const { data, error } = await supabase.from("blogs").insert([newBlog]);
-                console.log(newBlog);
+                // console.log(newBlog);
                 if (error) {
                     console.error("Error inserting blog:", error.message);
                     return;
@@ -56,13 +56,17 @@ function BlogsCreate() {
             }
         }
 
-        insertBlog();
+        if (window.confirm("Please confirm that you would like to create a Public Blog.")) {
+            insertBlog();
+        } else {
+            console.log("Blog creation cancelled.");
+        }
     }
 
     return (
         <>
         <div className='createBlogDiv'>
-            <h2>Create a Blog</h2>
+            <h2>Create a Public Blog</h2>
             <form className='createBlogs' onSubmit={handleSubmit}>
                 <div>
                     <label for="title">Title:</label>
