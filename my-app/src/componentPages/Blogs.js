@@ -27,7 +27,7 @@ function Blogs() {
         if (data) {
             setSupabaseBlogs(data);
             setFilteredItems(data);
-            console.log("TESTING in blogs.js: " + data);
+            // console.log("TESTING in blogs.js: " + data);
         }
     } catch (error) {
         console.error("Error fetching blogs:", error.message);

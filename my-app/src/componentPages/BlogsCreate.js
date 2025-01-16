@@ -7,12 +7,63 @@ import { supabase } from '../supabase';
 /**********************************************************************/
 
 function BlogsCreate() {
+    const [blogAmount, setBlogAmount] = useState(100); //temporary number
+
+    // Fetch blogs from Supabase to find out how many there are for IDs
+      useEffect(() => {
+        async function fetchBlogs() {
+        try {
+            const { data, error } = await supabase.from("blogs").select("id"); 
+            if (error) {
+                console.error("Error fetching blogs:", error.message);
+                return;
+            }
+            if (data) {
+                // console.log("TESTING in blogsCreate.js: " + data.length);
+                setBlogAmount(data.length);
+            }
+        } catch (error) {
+            console.error("Error fetching blogs:", error.message);
+        }
+        }
+    
+        fetchBlogs();
+    }, []);
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        const created_at = new Date().toISOString();
+        const id = blogAmount + 1;
+        const title = event.target.elements.title.value;
+        const author = event.target.elements.author.value;
+        const blogURL = event.target.elements.blogURL.value;
+        const summary = event.target.elements.summary.value;
+        const newBlog = { id, created_at, title, author, blogURL, summary };
+        console.log(newBlog);
+        event.target.reset();
+
+        async function insertBlog() {
+            try {
+                const { data, error } = await supabase.from("blogs").insert([newBlog]);
+                console.log(newBlog);
+                if (error) {
+                    console.error("Error inserting blog:", error.message);
+                    return;
+                }
+                console.log("Blog inserted successfully:", data);
+            } catch (error) {
+                console.error("Error inserting blog:", error.message);
+            }
+        }
+
+        insertBlog();
+    }
 
     return (
         <>
         <div className='createBlogDiv'>
             <h2>Create a Blog</h2>
-            <form className='createBlogs'>
+            <form className='createBlogs' onSubmit={handleSubmit}>
                 <div>
                     <label for="title">Title:</label>
                     <input type="text" id="title" name="title" required></input>
