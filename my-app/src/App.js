@@ -10,6 +10,7 @@ import Events from './componentPages/Events'
 import Resources from './componentPages/Resources'
 import About from './componentPages/About'
 import Footer from './components/Footer'
+import SignIn from './componentPages/SignIn'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/blogs/create" element={<BlogsCreate />} />
           <Route path="/events" element={<Events />} />
           <Route path="/about" element={<About />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
       </div>
       <Footer/>
