@@ -88,3 +88,22 @@ a:hover{
         margin: 0 auto;
     }
 }
+
+/* BlogsCreate styling */
+.createBlogDiv h2{
+    text-align: center;
+}
+.createBlogs{
+    margin: 50px auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.createBlogs label{
+    width: 150px;
+    text-align: right;
+}
+.createBlogs input{
+    width: 500px;
+}

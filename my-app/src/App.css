@@ -41,8 +41,8 @@ h2{
   font-size: calc(64/1440 * 100vw);
   font-weight: normal;
 }
-input, select{
-  font-size: var(--nav-font-size);
+input, select, label, textarea{
+  font-size: calc(14px + 10/1440*100vw);
   padding: 5px 10px;
   margin-right: 10px;
   display: inline-block;

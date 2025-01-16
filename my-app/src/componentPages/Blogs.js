@@ -1,6 +1,7 @@
 import '../App.css';
 import './blog.css';
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import PageHero from '../components/PageHero'
 import blogListJSON from '../data/blogs.json'
 /************************ SUPABASE INFORMATION ************************/
@@ -67,7 +68,10 @@ function Blogs() {
           <h2>Create</h2>
           <div className="createButtons">
             <button>Private Journal</button>
-            <button>Public Blog</button>
+            <Link to="/blogs/create">
+              <button>Public Blog</button>
+            </Link>
+            
           </div>
         </div>
         <div className="read">
